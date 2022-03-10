@@ -1,9 +1,11 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class ColorRandomizer : MonoBehaviour
 {
+    public TextMeshProUGUI counter;
     public List<GameObject> columnsList = new List<GameObject>();
     public List<Color> colorsList = new List<Color>();
     public List<GameObject> changedColorColumnsList = new List<GameObject>();
@@ -13,9 +15,10 @@ public class ColorRandomizer : MonoBehaviour
     private void Update()
     {
         _currentTime += 1f * Time.deltaTime;
+        counter.text = $"Counter: {_currentTime:00}";
         if (!(_currentTime >= _fixedTime)) return;
-        RandomizeColumnsColor();
         _currentTime = 0;
+        RandomizeColumnsColor();
     }
 
     private void RandomizeColumnsColor()

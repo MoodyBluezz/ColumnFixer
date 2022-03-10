@@ -4,26 +4,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FixerRB : MonoBehaviour
+public class FixerRB : FixerController
 {
-    public ColorRandomizer _colorRandomizer;
-    public List<Image> fixerSkills = new List<Image>();
-    private Vector3 previousPos;
-    private bool _isCollided = false;
+    private Vector3 lastPositionRB;
+    private bool _isCollidedRB = false;
 
     private void Start()
     {
-        previousPos = transform.position;
+        lastPositionRB = new Vector3(2, 0, -1);
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         FixColumnColor();
     }
 
-    private void FixColumnColor()
+    protected override void FixColumnColor()
     {
-        if (!_isCollided)
+        if (!_isCollidedRB)
         {
             foreach (var column in _colorRandomizer.changedColorColumnsList)
             {
@@ -37,24 +35,24 @@ public class FixerRB : MonoBehaviour
         }
         else
         {
-            transform.position = Vector3.Lerp(transform.position,
-                previousPos, 2f * Time.deltaTime);
             StartCoroutine(WaitForFixerToReturn());
+            transform.position = Vector3.Lerp(transform.position,
+                lastPositionRB, 2f * Time.deltaTime);
         }
     }
 
-    private IEnumerator WaitForFixerToReturn()
+    protected override IEnumerator WaitForFixerToReturn()
     {
-        yield return new WaitForSeconds(2);
         _colorRandomizer._currentTime = 0;
-        _isCollided = false;
+        yield return new WaitForSeconds(2);
+        _isCollidedRB = false;
         _colorRandomizer.changedColorColumnsList.Clear();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (!other.tag.Equals("Cube")) return;
-        _isCollided = true;
+        _isCollidedRB = true;
         other.GetComponent<Renderer>().material.color = Color.white;
     }
 }

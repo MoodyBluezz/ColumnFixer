@@ -195,7 +195,7 @@ MonoBehaviour:
   m_text: New Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 0}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -245,7 +245,7 @@ MonoBehaviour:
   checkPaddingRequired: 0
   m_isRichText: 1
   m_parseCtrlCharacters: 1
-  m_isOrthographic: 0
+  m_isOrthographic: 1
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &281510792
@@ -371,7 +371,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -410,7 +410,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600776828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.1558228, y: 0.58636856, z: 1.0736163}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -713,7 +713,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 904403703}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.28, z: -1.79}
+  m_LocalPosition: {x: -2.77, y: 1.05, z: -1.79}
   m_LocalScale: {x: 1, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -810,7 +810,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954074112}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.28, z: 0}
+  m_LocalPosition: {x: -2.77, y: 1.05, z: 0}
   m_LocalScale: {x: 1, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -936,13 +936,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FixerRG
       objectReference: {fileID: 0}
+    - target: {fileID: 1490687513932192578, guid: a25fca43f7a61a84a965179795fea105, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1490687513932192579, guid: a25fca43f7a61a84a965179795fea105, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1490687513932192579, guid: a25fca43f7a61a84a965179795fea105, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.953
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1490687513932192579, guid: a25fca43f7a61a84a965179795fea105, type: 3}
       propertyPath: m_LocalPosition.y
@@ -950,7 +954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1490687513932192579, guid: a25fca43f7a61a84a965179795fea105, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.093
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1490687513932192579, guid: a25fca43f7a61a84a965179795fea105, type: 3}
       propertyPath: m_LocalRotation.w
@@ -982,7 +986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1490687513932192590, guid: a25fca43f7a61a84a965179795fea105, type: 3}
       propertyPath: m_UseGravity
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1490687513932192590, guid: a25fca43f7a61a84a965179795fea105, type: 3}
       propertyPath: m_Constraints
@@ -1134,7 +1138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1253576261}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.28, z: 1.81}
+  m_LocalPosition: {x: -2.77, y: 1.05, z: 1.81}
   m_LocalScale: {x: 1, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1168,7 +1172,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386746413}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1307,8 +1311,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 20, y: 0}
+  m_SizeDelta: {x: -40, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1771651781
 MonoBehaviour:
@@ -1377,6 +1381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b9faefe38c9c2f498ab05f529a09861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  counter: {fileID: 281510791}
   columnsList:
   - {fileID: 954074112}
   - {fileID: 1253576261}
@@ -1394,7 +1399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870535588}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.968483, y: -1.6762176, z: 0.0964926}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1475,13 +1480,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: FixerRB
       objectReference: {fileID: 0}
+    - target: {fileID: 1490687513932192578, guid: a25fca43f7a61a84a965179795fea105, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1490687513932192579, guid: a25fca43f7a61a84a965179795fea105, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1490687513932192579, guid: a25fca43f7a61a84a965179795fea105, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.953
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1490687513932192579, guid: a25fca43f7a61a84a965179795fea105, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1489,7 +1498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1490687513932192579, guid: a25fca43f7a61a84a965179795fea105, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.783
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1490687513932192579, guid: a25fca43f7a61a84a965179795fea105, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1521,7 +1530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1490687513932192590, guid: a25fca43f7a61a84a965179795fea105, type: 3}
       propertyPath: m_UseGravity
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1490687513932192590, guid: a25fca43f7a61a84a965179795fea105, type: 3}
       propertyPath: m_Constraints
@@ -1531,6 +1540,10 @@ PrefabInstance:
       propertyPath: _colorRandomizer
       value: 
       objectReference: {fileID: 1870535589}
+    - target: {fileID: 1490687513932192591, guid: a25fca43f7a61a84a965179795fea105, type: 3}
+      propertyPath: startingPosition
+      value: 
+      objectReference: {fileID: 334249734}
     - target: {fileID: 1490687513932192591, guid: a25fca43f7a61a84a965179795fea105, type: 3}
       propertyPath: fixerSkills.Array.size
       value: 2
